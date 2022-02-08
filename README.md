@@ -1,0 +1,2 @@
+Etch-a-Sketch program written from scratch. First time exploring basic animations which I added to the buttons.
+Buttons for black color, random RGB color and an eraser. Added a slider for choosing the grid size.
