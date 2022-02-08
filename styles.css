@@ -1,0 +1,95 @@
+.rangeslider {
+    -webkit-appearance: none;
+    background: #d3d3d3; 
+}
+
+.rangeslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px; 
+    background: black;
+}
+#container {
+    display: inline-block;
+    height: 600px;
+    width: 600px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    box-shadow: 1px 2px 3px #888888;
+}
+
+#maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titlecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+}
+.button1 {
+    font-family: 'Jura', sans-serif;
+    padding: 8px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@keyframes rgb {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes eraser {
+    25% {
+        background-color: white;
+    }
+    80% {
+        color: white;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.button2 {
+    font-family: 'Jura', sans-serif;
+    padding: 8px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+.button2:hover {
+    animation: rgb 0.5s;
+    background-color: blue;
+}
+
+.button3 {
+    font-family: 'Jura', sans-serif;
+    padding: 8px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button3:hover {
+    background-color: white;
+    animation: eraser 0.5s;
+}
